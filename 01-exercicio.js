@@ -10,35 +10,41 @@ A tag deve ter:
 
 */
 
-const nome = "Dogo", raca = "vira-lata"
-let idade = 1, peso = 1.2, adotado = false
+const nome = "Dogo",
+  raca = "vira-lata";
+let idade = 1,
+  peso = 1.2,
+  adotado = false;
 
 const dogThor = {
   nome: "Thor",
   raca: "SRD",
   idade: 1,
   peso: 10.5,
-  adotado: true
-}
+  adotado: true,
+};
 
-let nameUpperCase = nome.toUpperCase()
-let racaFirsletter = raca.slice(0, 1).toUpperCase() + raca.slice(1).toLowerCase()
+let nameUpperCase = nome.toUpperCase();
+let racaFirsletter =
+  raca.slice(0, 1).toUpperCase() + raca.slice(1).toLowerCase();
 
+const animal = [
+  {
+    nome: nameUpperCase,
+    peso: peso,
+    raca: racaFirsletter,
+  },
+];
 
-
-const animal = [{
-  nome: nameUpperCase,
-  peso: peso,
-  raca: racaFirsletter
-}]
-
-console.log(animal)
+console.log(animal);
 
 const dogThorTag = {
   nome: dogThor.nome.toUpperCase(),
-  raca: dogThor.raca.slice(0, 1).toUpperCase() + dogThor.raca.slice(1).toLowerCase(),
-  peso: dogThor.peso
-}
+  raca:
+    dogThor.raca.slice(0, 1).toUpperCase() +
+    dogThor.raca.slice(1).toLowerCase(),
+  peso: dogThor.peso,
+};
 
-console.table(dogThorTag)
+console.table(dogThorTag);
 // console.log(`Nome: ${ dogThor.nome.toUpperCase() } - Raça ${ dogThor.raca.slice(0, 1).toUpperCase() + dogThor.raca.slice(1).toLowerCase() } - Peso: ${ dogThor.peso }`)
